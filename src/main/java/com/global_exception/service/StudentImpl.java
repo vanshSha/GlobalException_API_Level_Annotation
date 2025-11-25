@@ -46,6 +46,7 @@ public class StudentImpl implements StudentService {
         } else {
 
             Student existing = repo.findById(id).orElseThrow();
+        //    Student student1 = existing1.get();
 
             existing.setName(student.getName());
             existing.setAge(student.getAge());
